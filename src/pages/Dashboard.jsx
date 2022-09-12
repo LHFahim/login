@@ -7,8 +7,6 @@ function Dashboard() {
     <>
       <Nav />
 
-      <div className="h-[463px] w-[1500px] "></div>
-
       <Footer />
     </>
   );

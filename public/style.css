@@ -6,10 +6,10 @@ body {
   border: 1px solid red;
 }
 
-body {
+/* body {
   background: url('/images/img-1.jpg') no-repeat center;
   background-size: cover;
-}
+} */
 
 /* main {
   background: url("/images/img-1.jpg");

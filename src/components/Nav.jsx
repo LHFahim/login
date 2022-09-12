@@ -18,8 +18,8 @@ function Nav() {
         {/* menu */}
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
-            <li className="rounded-3xl outline outline-4 outline-blue-700 hover:bg-blue-700 ">
-              <Link to="/add-doctor">Add doctor</Link>
+            <li className="rounded-3xl outline outline-1 outline-blue-700 hover:bg-blue-700 ">
+              <Link to="/AddDoctor">Add doctor</Link>
             </li>
             {/* drop down */}
             {/* <li tabIndex={0}>

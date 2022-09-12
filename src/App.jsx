@@ -2,6 +2,7 @@ import React from 'react';
 import Form from './pages/Form';
 import { Routes, Route, Link } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
+import AddDoctor from './pages/AddDoctor';
 
 function App() {
   function getLoginDetail(loginDetail) {
@@ -14,8 +15,7 @@ function App() {
       <Dashboard />
       {/* <Form getLoginDetail={getLoginDetail} /> */}
       <Routes>
-        {/* <Route path="/" element={<Form />} /> */}
-        {/* <Route path="about" element={<About />} /> */}
+        <Route path="/AddDoctor" element={<AddDoctor />} />
       </Routes>
     </div>
   );
