@@ -7,12 +7,9 @@ function Nav() {
       <div className="navbar bg-blue-900 text-white">
         {/* hospital logo */}
         <div className="flex-1">
-          <a
-            href="https://google.com"
-            className="btn btn-ghost normal-case text-3xl font-bold"
-          >
+          <Link className="btn btn-ghost normal-case text-3xl font-bold" to="/">
             Trust Hospital
-          </a>
+          </Link>
         </div>
 
         {/* menu */}
