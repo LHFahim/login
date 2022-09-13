@@ -34,6 +34,7 @@ function AddDoctor() {
           <div className="inline-block border-b-2  border-blue-900 w-3/4"></div>
         </div>
 
+        {/* personal details */}
         <section>
           {/* name */}
           <div className="grid md:grid-cols-2 md:gap-56">
@@ -220,26 +221,45 @@ function AddDoctor() {
           <div className="inline-block border-b-2  border-blue-900 w-3/4"></div>
         </div>
 
+        {/* employee details */}
         <section id="employee-details">
-          {/* address, qualification and specialization */}
           <div className="grid md:grid-cols-2 md:gap-56">
-            {/* address */}
-            <div className="mt-1 relative z-0 mb-6 w-full group">
-              <textarea
-                type="text"
-                name="floating_address"
-                id="floating_address"
-                rows={4}
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                placeholder=" "
-                required=""
-              />
-              <label
-                for="floating_address"
-                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-              >
-                Address
-              </label>
+            <div>
+              {/* doctor type */}
+              <div className="relative z-0 mb-6 w-full group">
+                <input
+                  type="text"
+                  name="floating_doctor_type"
+                  id="floating_doctor_type"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required=""
+                />
+                <label
+                  for="floating_doctor_type"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Doctor type
+                </label>
+              </div>
+              {/* note */}
+              <div className="mt-1 relative z-0 mb-6 w-full group">
+                <textarea
+                  type="text"
+                  name="floating_note"
+                  id="floating_note"
+                  rows={4}
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required=""
+                />
+                <label
+                  for="floating_note"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Note
+                </label>
+              </div>
             </div>
 
             <div className="md:grid-cols-2 md:gap-y-0">
@@ -303,7 +323,7 @@ function AddDoctor() {
         {/* submit btn */}
         <button
           type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="mt-5 text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold  rounded-lg text-md w-full sm:w-auto px-10 py-3 text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Submit
         </button>
