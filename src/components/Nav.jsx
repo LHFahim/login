@@ -14,7 +14,10 @@ function Nav() {
 
         {/* menu */}
         <div className="flex-none">
-          <ul className="menu menu-horizontal p-0">
+          <ul className="menu menu-horizontal p-0 space-x-5">
+            <li className="rounded-3xl outline outline-1 outline-blue-700 hover:bg-blue-700 ">
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
             <li className="rounded-3xl outline outline-1 outline-blue-700 hover:bg-blue-700 ">
               <Link to="/AddDoctor">Add doctor</Link>
             </li>
