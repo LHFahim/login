@@ -5,16 +5,12 @@ import Dashboard from './pages/Dashboard';
 import AddDoctor from './pages/AddDoctor';
 
 function App() {
-  function getLoginDetail(loginDetail) {
-    console.log('Inside App:');
-    console.log(loginDetail);
-  }
-
   return (
     <div>
-      <Dashboard />
-      {/* <Form getLoginDetail={getLoginDetail} /> */}
       <Routes>
+        <Route path="/" element={<Form getLoginDetail />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/AddDoctor" element={<AddDoctor />} />
       </Routes>
     </div>
